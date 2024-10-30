@@ -27,6 +27,6 @@ class ButtonHandler:
                 if 1 <= registro_id <= rMax:  # Verifica que el ID esté en el rango válido
                     self.show_information.buscar_registro_especifico(registro_id)  # Pasa el ID convertido
                 else:
-                    self.window_instance.error()  # Llama al método error de Windows
+                    self.window_instance.error()
             except ValueError:
-                self.window_instance.error()  # Llama al método error de Windows
+                self.window_instance.error()
