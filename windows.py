@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import simpledialog
 from buttonHandler import ButtonHandler
 
 class Windows:
@@ -16,14 +15,10 @@ class Windows:
         self.root.resizable(False, False)
         self.root.config(bg="black")
 
-    def specific(self):
-        """Pide al usuario un ID específico para buscar."""
-        user_input = simpledialog.askstring("Entrada", "¿Qué registro deseas ver?")
-        return user_input
 
     def error(self):
         ventana_error = tk.Tk()
         ventana_error.title("Error")
         ventana_error.config(bg="black")
-        tk.Label(ventana_error, text="ID Invalido.", padx=20, pady=20, bg="black", fg="white").pack()
+        tk.Label(ventana_error, text="ID Invalido.", padx=20, pady=20, bg="black", fg="red").pack()
         ventana_error.mainloop()

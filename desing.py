@@ -1,4 +1,3 @@
-import tkinter as tk
 from tkinter import ttk
 
 class Desing:
@@ -15,7 +14,7 @@ class Desing:
         self.tree.heading("ID", text="ID")
         self.tree.heading("Nombre", text="Nombre")
         self.tree.heading("Apellido", text="Apellido")
-        self.tree.heading("Ciudad", text="Ciudad")
+        self.tree.heading("Ciudad", text="ciudad")
         self.tree.heading("Calle", text="Calle")
         self.tree.heading("Promedio", text="Promedio")
         self.tree.column("ID", width=50, anchor='center', stretch=False)

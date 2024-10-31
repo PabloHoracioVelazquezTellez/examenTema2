@@ -4,7 +4,7 @@ from tkinter import simpledialog
 class ButtonHandler:
     def __init__(self, show_information, window_instance):
         self.show_information = show_information
-        self.window_instance = window_instance  # Guardar la instancia de Windows
+        self.window_instance = window_instance
         self.create_buttons()
 
     def create_buttons(self):
@@ -18,7 +18,8 @@ class ButtonHandler:
 
     def buscar_registro(self):
         """Solicita un ID de registro y busca el registro específico."""
-        registro_id = simpledialog.askstring("Buscar Registro", "Ingresa el ID del registro:")
+        registro_id = simpledialog.askstring(" ", "Ingresa el ID del registro:")
+
         if registro_id is not None:  # Verifica que el usuario no haya cancelado
             try:
                 registro_id = int(registro_id)  # Convierte a entero
